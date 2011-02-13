@@ -19,6 +19,11 @@
     <source-path append="true">
       <path-element>C:\Development\sc2\src</path-element>
       <path-element>C:\Development\sc2\framework\di</path-element>
+      <path-element>C:\Development\sc2\framework\networking</path-element>
+      <path-element>C:\Development\sc2\framework\physics</path-element>
+      <path-element>C:\Development\sc2\framework\rendering</path-element>
+      <path-element>C:\Development\sc2\framework\utils</path-element>
+      <path-element>C:\Development\sc2\framework\core</path-element>
       <path-element>C:\Development\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
@@ -26,6 +31,8 @@
       <path-element>C:\Development\sc2\framework\di\lib\as3commons-lang-0.3.1.swc</path-element>
       <path-element>C:\Development\sc2\framework\di\lib\as3commons-logging-1.2.swc</path-element>
       <path-element>C:\Development\sc2\framework\di\lib\as3commons-reflect-1.3.3.1.swc</path-element>
+      <path-element>C:\Development\sc2\framework\networking\lib\SFS2X_API_AS3.swc</path-element>
+      <path-element>C:\Development\sc2\framework\physics\lib\Box2D.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>

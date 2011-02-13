@@ -10,8 +10,7 @@ package
 	{
 		public override function configure():void
 		{
-			// Tell the requested testclass1 to actually use testclass2
-			//bind(TestClass1, TestClass2);
+			// Bind any specific classes
 		}
 	}
 }

@@ -2,6 +2,7 @@ package
 {
 	import com.scyllacharybdis.di.createInjector;
 	import com.scyllacharybdis.di.Injector;
+	import com.scyllacharybdis.scenegraph.SceneGraph;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
@@ -23,7 +24,11 @@ package
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
 			
+			// Create the injector using the core module configuration
 			var injector:Injector = createInjector( new CoreModule(), this );
+			
+			var sceneGraph:SceneGraph = injector.getInstance( SceneGraph );
+			
 		}
 		
 	}
