@@ -5,11 +5,8 @@ package com.scyllacharybdis.scenegraph
 	import Box2D.Dynamics.b2World;
 	import com.scyllacharybdis.components.RenderComponent;
 	import com.scyllacharybdis.components.ScriptComponent;
-	import com.scyllacharybdis.core.objects.BaseObject;
-	import com.scyllacharybdis.core.objects.GameObject;
-	import com.scyllacharybdis.core.physics.PhysicsContactListener;
-	import com.scyllacharybdis.core.rendering.Renderer;
 	import com.scyllacharybdis.interfaces.IDestruct;
+	import com.scyllacharybdis.objects.GameObject;
 	import com.scyllacharybdis.rendering.Renderer;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
@@ -52,7 +49,7 @@ package com.scyllacharybdis.scenegraph
 		/**
 		 * Default destructor
 		 */
-		public function destructor()
+		public function destructor():void
 		{
 			_renderer = null;
 			
@@ -103,7 +100,7 @@ package com.scyllacharybdis.scenegraph
 			{
 				return;
 			}
-			gameObj.engine_start();
+			gameObj.start();
 			addGameObject(gameObj);
 			addChildrenToScene(gameObj);
 		}
@@ -117,7 +114,7 @@ package com.scyllacharybdis.scenegraph
 			{
 				return;
 			}
-			gameObj.engine_stop();
+			gameObj.stop();
 			removeChildrenFromScene(gameObj);
 			removeGameObject(gameObj);
 		}

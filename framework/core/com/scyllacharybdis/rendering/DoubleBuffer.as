@@ -27,9 +27,9 @@ package com.scyllacharybdis.rendering
 		 */
 		public function DoubleBuffer( canvas:DisplayObjectContainer ) 
 		{
-			_canvas = value;
-			_width = value.stage.stageWidth;
-			_height = value.stage.stageHeight;
+			_canvas = canvas;
+			_width = canvas.stage.stageWidth;
+			_height = canvas.stage.stageHeight;
 
 			// Create the buffers
 			_frontBuffer = new BitmapData(_width, _height);
@@ -43,7 +43,7 @@ package com.scyllacharybdis.rendering
 		/**
 		 * Default destructor
 		 */
-		public function destructor()
+		public function destructor():void
 		{
 		}
 

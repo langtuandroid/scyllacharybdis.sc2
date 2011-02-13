@@ -1,6 +1,7 @@
 package com.scyllacharybdis.rendering 
 {
 	import com.scyllacharybdis.interfaces.IDestruct;
+	import com.scyllacharybdis.scenegraph.SceneGraph;
 	import flash.display.DisplayObjectContainer;
 	import flash.events.KeyboardEvent;
 	import flash.events.MouseEvent;
@@ -29,7 +30,7 @@ package com.scyllacharybdis.rendering
 		/**
 		 * Default destructor
 		 */
-		public function destructor()
+		public function destructor():void
 		{
 			_doubleBuffer = null;
 		}		
@@ -38,16 +39,6 @@ package com.scyllacharybdis.rendering
 		 * Get the display context
 		 */
 		public function get canvas():DisplayObjectContainer { return _canvas; }
-		
-		/**
-		 * Set the display context
-		 */
-		public function set canvas(value:DisplayObjectContainer):void 
-		{
-			_canvas = value;
-			_doubleBuffer.canvas = value;
-			addListeners();
-		}
 		
 		/**
 		 * Get the rendering surface

@@ -26,7 +26,7 @@ package com.scyllacharybdis.rendering
 		/**
 		 * Default destructor
 		 */
-		public function destructor()
+		public function destructor():void
 		{
 			_window = null;
 		}		
